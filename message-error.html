@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-  <header class="header">
+  <header class="header header_sticky">
     <div class="header__container">
       <img src="./images/logo.svg" alt="logo" class="header__logo">
       <div class="header__menu">
@@ -300,9 +300,7 @@
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
         <div class="popup__title-wrapper">
           <span class="popup__title">пожертвовать</span>
-          <button type="button" class="popup__close-button page__button">
-            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-          </button>
+          <button type="button" class="popup__close-button page__button"></button>
         </div>
         <p class="popup__donate-text">сумма</p>
         <div class="popup__sum-of-money-container">
@@ -321,7 +319,7 @@
           <button type="button" class="popup__sum-of-money page__button" value="3000">
             <span class="popup__sum-of-money-text">3000 &#8381;</span>
           </button>
-          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма" class="popup__sum-of-money-input">
+          <input type="number" min="1" name="sum-of-money" id="sum-of-money" placeholder="другая сумма" class="popup__sum-of-money-input">
         </div>
         <p class="popup__donate-text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека" class="popup__email-input" required>
@@ -355,9 +353,7 @@
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
         <div class="popup__title-wrapper">
           <span class="popup__title">купить билет</span>
-          <button type="button" class="popup__close-button page__button">
-            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-          </button>
+          <button type="button" class="popup__close-button page__button"></button>
         </div>
         <p class="popup__buy-ticket-text">сумма и количество</p>
         <div class="popup__buy-ticket-container">
