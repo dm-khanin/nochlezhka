@@ -23,3 +23,10 @@
 .popup__payment-method-label:last-of-type {
   padding-bottom: 12px;
 }
+
+.popup__payment-method-label .popup__form-radio:checked ~ .popup__radio-payment::before {
+  background-image: url(../../../images/radio-checked.svg);
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
