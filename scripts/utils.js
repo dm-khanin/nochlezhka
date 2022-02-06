@@ -10,10 +10,12 @@ const header = document.querySelector('.header');
 
 function openPopup (popup) {
   popup.classList.add('popup_opened');
+  header.classList.remove('header_sticky');
 }
 
 function closePopup (popup) {
   popup.classList.remove('popup_opened');
+  header.classList.add('header_sticky');
 }
 
 const eventsCards = document.querySelectorAll(".events__card");

@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-  <header class="header">
+  <header class="header header_sticky">
     <div class="header__container">
       <img src="./images/logo.svg" alt="logo" class="header__logo">
       <div class="header__menu">
@@ -270,25 +270,24 @@
         <p class="popup__navigation-text">ваш город:</p>
         <form name="change-city" class="popup__change-city-form">
           <label for="Moscow" class="popup__change-city-label">
-            <span>Москва</span>
             <input type="radio" name="City" id="Moscow" value="Москва" class="popup__form-radio">
-            <span class="popup__pseudo-item"></span>
+            <span class="popup__radio-city">Москва</span>
           </label>
-          <label for="Sanct-Piterburg" class="popup__change-city-label"> <span>Санкт-Петербург</span>
+          <label for="Sanct-Piterburg" class="popup__change-city-label">
             <input type="radio" name="City" id="Sanct-Piterburg" value="Санкт-Петербург" class="popup__form-radio" checked>
-            <span class="popup__pseudo-item"></span>
+            <span class="popup__radio-city">Санкт-Петербург</span>
           </label>
-          <label for="Sochi" class="popup__change-city-label"> <span>Сочи</span>
+          <label for="Sochi" class="popup__change-city-label">
             <input type="radio" name="City" id="Sochi" value="Сочи" class="popup__form-radio">
-            <span class="popup__pseudo-item"></span>
+            <span class="popup__radio-city">Сочи</span>
           </label>
-          <label for="Kaluga" class="popup__change-city-label"> <span>Калуга</span>
+          <label for="Kaluga" class="popup__change-city-label">
             <input type="radio" name="City" id="Kaluga" value="Калуга" class="popup__form-radio">
-            <span class="popup__pseudo-item"></span>
+            <span class="popup__radio-city">Калуга</span>
           </label>
-          <label for="Ekaterinburg" class="popup__change-city-label"> <span>Екатеринбург</span>
+          <label for="Ekaterinburg" class="popup__change-city-label">
             <input type="radio" name="City" id="Ekaterinburg" value="Екатеринбург" class="popup__form-radio">
-            <span class="popup__pseudo-item"></span>
+            <span class="popup__radio-city">Екатеринбург</span>
           </label>
         </form>
       </div>
@@ -301,9 +300,7 @@
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
         <div class="popup__title-wrapper">
           <span class="popup__title">пожертвовать</span>
-          <button type="button" class="popup__close-button page__button">
-            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-          </button>
+          <button type="button" class="popup__close-button page__button"></button>
         </div>
         <p class="popup__donate-text">сумма</p>
         <div class="popup__sum-of-money-container">
@@ -322,7 +319,7 @@
           <button type="button" class="popup__sum-of-money page__button" value="3000">
             <span class="popup__sum-of-money-text">3000 &#8381;</span>
           </button>
-          <input type="text" name="sum-of-money" id="sum-of-money" placeholder="другая сумма" class="popup__sum-of-money-input">
+          <input type="number" min="1" name="sum-of-money" id="sum-of-money" placeholder="другая сумма" class="popup__sum-of-money-input">
         </div>
         <p class="popup__donate-text">email</p>
         <input type="email" name="email" id="email" placeholder="укажите почту для отправки чека" class="popup__email-input" required>
@@ -330,13 +327,11 @@
         <fieldset class="popup__payment-method">
           <label for="card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="card" value="банковской картой" class="popup__form-radio" checked>
-            <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
-            <span>банковской картой</span>
+            <span class="popup__radio-payment">банковской картой</span>
           </label>
           <label for="paypal" class="popup__payment-method-label">
             <input type="radio" name="payment" id="paypal" value="paypal" class="popup__form-radio">
-            <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
-            <span>PayPal</span>
+            <span class="popup__radio-payment">PayPal</span>
           </label>
         </fieldset>
         <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями
@@ -358,9 +353,7 @@
         <img src="./images/slider.svg" alt="слайдер" class="popup__slider">
         <div class="popup__title-wrapper">
           <span class="popup__title">купить билет</span>
-          <button type="button" class="popup__close-button page__button">
-            <img src="./images/close-icon.svg" alt="закрыть" class="popup__donate-close-button-picture">
-          </button>
+          <button type="button" class="popup__close-button page__button"></button>
         </div>
         <p class="popup__buy-ticket-text">сумма и количество</p>
         <div class="popup__buy-ticket-container">
@@ -377,13 +370,11 @@
         <fieldset class="popup__payment-method">
           <label for="bank-card" class="popup__payment-method-label">
             <input type="radio" name="payment" id="bank-card" value="банковской картой" class="popup__form-radio" checked>
-            <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
-            <span>банковской картой</span>
+            <span class="popup__radio-payment">банковской картой</span>
           </label>
           <label for="paypal-payment" class="popup__payment-method-label">
             <input type="radio" name="payment" id="paypal-payment" value="paypal" class="popup__form-radio">
-            <span class="popup__pseudo-item popup__pseudo-item_payment"></span>
-            <span>PayPal</span>
+            <span class="popup__radio-payment">PayPal</span>
           </label>
         </fieldset>
         <p class="popup__offer">Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями

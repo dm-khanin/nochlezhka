@@ -11,6 +11,7 @@
 @import url(../blocks/content/content.css);
 
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/_sticky/header_sticky.css);
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__menu/header__menu.css);
@@ -66,7 +67,6 @@
 @import url(../blocks/popup/__change-city-form/popup__change-city-form.css);
 @import url(../blocks/popup/__change-city-label/popup__change-city-label.css);
 @import url(../blocks/popup/__form-radio/popup__form-radio.css);
-@import url(../blocks/popup/__pseudo-item/popup__pseudo-item.css);
 @import url(../blocks/popup/__container/_type/popup__container_type_donate.css);
 @import url(../blocks/popup/__donate-form/popup__donate-form.css);
 @import url(../blocks/popup/__slider/popup__slider.css);
@@ -82,11 +82,12 @@
 @import url(../blocks/popup/__sum-of-money-input/popup__sum-of-money-input.css);
 @import url(../blocks/popup/__email-input/popup__email-input.css);
 @import url(../blocks/popup/__payment-method-label/popup__payment-method-label.css);
-@import url(../blocks/popup/__pseudo-item/_payment/popup__pseudo-item_payment.css);
 @import url(../blocks/popup/__offer/popup__offer.css);
 @import url(../blocks/popup/__offer/_color/_blue/popup__offer_color_blue.css);
 @import url(../blocks/popup/__pay-button/popup__pay-button.css);
 @import url(../blocks/popup/__pay-button-text/popup__pay-button-text.css);
+@import url(../blocks/popup/__radio-payment/popup__radio-payment.css);
+@import url(../blocks/popup/__radio-city/popup__radio-city.css);
 
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__wrapper/events__wrapper.css);
